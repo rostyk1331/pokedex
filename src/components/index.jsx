@@ -3,7 +3,7 @@ import PokemonsList from "./PokemonsList";
 import SelectedPokemon from "./SelectedPokemon";
 
 class App extends React.Component {
-  state = { pokemonsList: [], selectedPokemon: null, filter: "" };
+  state = { pokemonsList: [], selectedPokemon: null };
 
   componentDidMount() {
     this.onPokemonLoad();
@@ -17,8 +17,9 @@ class App extends React.Component {
     const pokemonsOnPage = this.state.pokemonsList.length;
 
     fetch(
-      `https://pokeapi.co/api/v2/pokemon/?limit=12${!!pokemonsOnPage &&
-        `&offset=${pokemonsOnPage}`}`
+      `https://pokeapi.co/api/v2/pokemon/?limit=12${
+        !!pokemonsOnPage ? `&offset=${pokemonsOnPage}` : ""
+      }`
     )
       .then(response => response.json())
       .then(data => {
