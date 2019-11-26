@@ -1,0 +1,12 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+
+p,
+span {
+  text-transform: capitalize;
+}
+
+.pokemon-type {
+  background-color: #bebec1;
+}
