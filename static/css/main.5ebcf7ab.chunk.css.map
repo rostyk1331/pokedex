@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AAAA,gBACE,cACF,CAEA,OAEE,yBACF,CAEA,cACE,wBACF,CAXA,SACE,iBAEF,CAEA,YAHE,yBAKF","file":"main.5ebcf7ab.chunk.css","sourcesContent":["table td {\r\n  text-align: center;\r\n  text-transform: capitalize;\r\n}\r\n\r\nh3 {\r\n  text-transform: capitalize;\r\n}\r\n"]}
