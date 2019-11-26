@@ -1,7 +1,7 @@
 import React from "react";
 import Pokemon from "../Pokemon";
 
-const PokemonsList = ({ pokemonsList, onPokemonSelect, filter }) => {
+const PokemonsList = ({ pokemonsList, onPokemonSelect }) => {
   return (
     <div className="row">
       {pokemonsList.map((pokemon, index) => (

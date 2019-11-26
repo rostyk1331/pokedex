@@ -15,10 +15,11 @@ class App extends React.Component {
 
   onPokemonLoad = () => {
     const pokemonsOnPage = this.state.pokemonsList.length;
-    let url = `https://pokeapi.co/api/v2/pokemon/?limit=12${!!pokemonsOnPage &&
-      `&offset=${pokemonsOnPage}`}`;
 
-    fetch(url)
+    fetch(
+      `https://pokeapi.co/api/v2/pokemon/?limit=12${!!pokemonsOnPage &&
+        `&offset=${pokemonsOnPage}`}`
+    )
       .then(response => response.json())
       .then(data => {
         this.setState({
@@ -39,7 +40,7 @@ class App extends React.Component {
             />
             <div className="text-center">
               <button
-                className="btn btn-primary w-75 mt-2"
+                className="btn btn-primary w-75 my-2"
                 onClick={this.onPokemonLoad}
               >
                 Load More
